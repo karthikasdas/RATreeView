@@ -200,13 +200,13 @@
 
 #pragma mark - Tracking the Removal of Views
 
-- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  if ([self.delegate respondsToSelector:@selector(treeView:didEndDisplayingCell:forItem:)]) {
-    RATreeNode *treeNode = [self treeNodeForIndexPath:indexPath];
-    [self.delegate treeView:self didEndDisplayingCell:cell forItem:treeNode.item];
-  }
-}
+//- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//  if ([self.delegate respondsToSelector:@selector(treeView:didEndDisplayingCell:forItem:)]) {
+//    RATreeNode *treeNode = [self treeNodeForIndexPath:indexPath];
+//    [self.delegate treeView:self didEndDisplayingCell:cell forItem:treeNode.item];
+//  }
+//}
 
 
 #pragma mark - Copying and Pasting Row Content
